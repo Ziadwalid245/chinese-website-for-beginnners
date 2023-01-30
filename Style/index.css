@@ -1,0 +1,235 @@
+/* Global Styles*/
+
+:root{
+    --image-background: linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75));
+    --image-width:400px;
+    --image-height:400px;
+}
+
+
+body{
+    background-color: white;
+    margin: 0;
+    font-family: "Manrope" , sans-serif;
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+font-size: 1.2rem;
+line-height: 2rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/* styling for the links*/
+a{
+    color: white;
+}
+
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+/* for mobile */
+
+@media screen and (max-width:600px){
+    p{
+        font-size: 1rem;
+    }
+}
+
+/* NAV Layout*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* border: 2px solid cyan;  */
+     gap: 40px;  
+    flex-wrap: wrap;
+    
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 175px;
+    /* border: 2px solid pink; */
+    gap: 20px;
+}
+
+.intro-text{
+   /* border: 2px solid green; */ 
+    margin: auto;
+}
+
+/* Nav Style  */
+header{
+    background-color:hsl(238, 69%, 8%) ;
+    margin-bottom: 70px;
+    padding-right: 10px;
+}
+
+.intro-text{
+    min-height: 250px; 
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+.header-wrapper{
+    background-color:hsl(238, 69%, 8%) ;
+
+}
+
+
+/*  Button and icon styles */
+
+.blog , .about{
+    font-size: 1.2rem;
+    position: relative;
+    color: white;
+    border-style: none;
+    background-color: transparent;
+    
+}
+
+.lantern-icon{
+    height: 50px;
+    /* padding-top: 10px; */
+}
+
+
+
+.blog::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    border: 1px solid white;
+   transform: scaleX(0);
+   transition: transform 400ms ease-in-out;
+   background-color: white;
+
+
+}
+
+.blog:hover::before{
+    transform: scaleX(1);
+}
+
+
+.about::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    border: 1px solid white;
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.about:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+/* Content Layout --------- */
+
+.resource-wrapper{
+    width: 90%;
+    margin: auto;
+     /* border: 2px solid green;  */
+}
+
+
+.content-wrapper{
+   display: flex;
+  flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   /* border: 2px solid red;  */
+}
+
+
+/* Styling the content  */
+
+.books{
+    background: var(--image-background),url('/images/new-book-image.png');
+    min-width: var(--image-width);
+    min-height: var(--image-height);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.beginner-guide{
+    background: var(--image-background), url('/images/chinese.jpg');
+    min-width: var(--image-width);
+    min-height: var(--image-height);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  
+}
+
+.channels{
+    background: var(--image-background) , url('/images/youtube-logo.png') ;
+    background-size:cover;
+    min-width: var(--image-width);
+    min-height:var(--image-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.websites{
+    background: var(--image-background) , url('/images/web-icon-7.png');
+    background-size: cover;
+    min-width: var(--image-width);
+    min-height: var(--image-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.courses{
+    background: var(--image-background) , url('/images/courses.png');
+    background-size: contain;
+    min-width: var(--image-width);
+    min-height: var(--image-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+}

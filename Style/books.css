@@ -1,0 +1,172 @@
+/* -----------------
+GLOBAL STYLES 
+-------------- */
+
+body{
+    font-family: "Manrope" , sans-serif;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+
+p{
+    line-height: 2rem;
+}
+
+
+
+img{
+    width: 35%;   
+}
+
+h1{
+ text-decoration: underline;
+ text-underline-offset: 8px;
+ margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+
+}
+
+/* for mobile */
+@media (max-width:600px) {
+    img{
+        min-width: 100%;
+    }
+    
+  
+    
+
+}  
+
+
+/* -----------------
+Header layout
+-------------- */
+
+header{
+/* border: 2px solid green; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 70px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    /* border: 2px solid red; */
+}
+
+/* -----------------
+Nav Style
+-------------- */
+
+header{
+    background-color: hsl(238, 69%, 8%);
+    min-height: 75px;
+}
+.lantern-icon{
+    width: 3.5rem;
+}
+
+ /* button style */
+
+ .blog , .about{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+ }
+
+ .blog::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+ }
+
+.blog:hover::after{
+    transform: scaleX(1);
+}
+
+.about::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+ }
+
+.about:hover::after{
+    transform: scaleX(1);
+}
+
+
+/* -----------------
+Page layout and style
+-------------- --------*/
+
+/* Hero layout */
+
+.hero-and-content-wrapper{
+    width: 90%; 
+    margin: auto;
+    /* border: 2px solid pink; */
+}
+
+
+
+.hero{
+    min-height: 300px;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 50px;
+}
+
+/* for mobile */
+@media screen and (max-width:600px) {
+    .hero{
+         min-width: 80%; 
+    }
+    
+}
+
+
+/* Hero style */
+
+.hero{
+background: linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75)) , url('/images/new-book-image.png') ;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 35px;
+color: white;
+font-size: 1.3rem;
+}
+
+
+ /* Posts layout */
+
+ .image-container{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+

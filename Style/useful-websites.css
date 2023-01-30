@@ -1,0 +1,191 @@
+
+/* Global STYLES */
+
+body{
+    margin: 0;
+    font-family: "Manrope" , sans-serif;
+}
+
+ button{
+cursor: pointer;
+ }
+
+ 
+img{
+    width: 50%;
+}
+
+hr{
+    margin-bottom: 70px;
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+}
+
+p{
+    line-height: 2rem;
+    
+}
+ul{
+    line-height: 2rem;
+
+}
+
+/* for mobile */
+@media (max-width:600px) {
+    img{
+        min-width: 100%;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+  
+    
+
+}  
+
+
+
+
+
+
+/* NAV Layout */
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px solid green;*/
+    min-height: 70px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   /* border: 2px solid blue;*/
+   padding-right: 10px;
+}
+
+
+
+
+/* NAV STYLE --------------- */
+
+.wrapper{
+    background-color: hsl(238, 69%, 8%);
+    max-height: 70px;
+    margin-bottom: 50px;
+}
+
+/* ICON style */
+.lantern-icon{
+width: 50px;
+}
+
+/* button style */ 
+
+.about,.blog{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.about{
+    background-color: transparent;
+    border: none;
+ 
+}
+
+.about::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid white;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.about:hover::after{
+    transform: scaleX(1);
+}
+
+.blog{
+    background-color: transparent;
+    border: none;
+}
+
+.blog::after{
+    content: '';
+    border: 1px solid white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out ;
+}
+
+.blog:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+/* HERO and Posts Layout ------------*/
+
+article{
+    width: 90%;
+    margin: auto;
+   /* border: 2px solid red;*/
+   text-align: center;
+  
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 375px;
+    width: 100%;
+    margin-bottom: 70px;
+    
+}
+
+/* for mobile */
+
+@media screen and (max-width:600px) {
+    .hero{
+        min-width: 100%;
+    }
+  
+}
+/* Hero and Posts style */
+
+.hero{
+    background: linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75)), url('/images/web-icon-7.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border-radius: 35px;
+
+}
+
+.image-container{
+    width: 70%;
+    /*border: 2px solid green;*/
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#line-dictonary-img{
+    width: 30%;
+}
+
+

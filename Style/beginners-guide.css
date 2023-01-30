@@ -1,0 +1,126 @@
+/*-------
+ Global styles-
+  ------ */
+
+  body{
+    margin: 0;
+    font-family: "Manrope" , sans-serif;
+  }
+
+button{
+    cursor: pointer;
+}
+
+/*-------
+ Header and NAV Layout
+  ------ */
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+
+  nav{
+  display: flex;
+ align-items: center;
+ gap: 1.5rem;
+ margin-right: 10px;
+ border: 2px solid green;
+  }
+
+/*-------
+ Header style
+  ------ */
+  
+header{
+    background-color: hsl(238, 69%, 8%);
+    min-height: 75px;
+}
+.lantern-icon{
+    width: 10%;
+}
+
+ /* button and icon styles */
+ .lantern-icon{
+    width:10%
+ }
+
+ .blog , .about{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+ }
+
+ .blog::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+ }
+
+.blog:hover::after{
+    transform: scaleX(1);
+}
+
+.about::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+ }
+
+.about:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+/*-------
+ Page Layout
+  ------ */
+
+  /* Hero layout */
+  
+  .hero{
+    /* border: 2px solid green; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  /* Hero style */
+
+  .hero{
+min-height: 375px;
+background:  linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75)) 
+    , url('/images/chinese.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 35px;
+color: white;
+font-size: 1.3rem;
+  }
+
+
+  /* content layout */
+
+  .content-wrapper{
+    border: 2px solid red;
+    width: 90%;
+   margin: auto;
+  }
