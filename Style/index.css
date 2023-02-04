@@ -67,8 +67,9 @@ header{
 }
 
 .intro-text{
-   /* border: 2px solid green; */ 
+   /* border: 2px solid green;  */
     margin: auto;
+   padding-top: 20px;
 }
 
 /* Nav Style  */
@@ -163,7 +164,7 @@ header{
    gap: 1.7rem;
    justify-content: center;
    align-items: center;
-    border: 2px solid red;  
+    /* border: 2px solid red;   */
 }
 
 
