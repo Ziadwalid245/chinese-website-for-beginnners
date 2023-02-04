@@ -2,8 +2,8 @@
 
 :root{
     --image-background: linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75));
-    --image-width:400px;
-    --image-height:400px;
+     --image-width:28rem;
+    --image-height:25rem;  
 }
 
 
@@ -27,12 +27,9 @@ button{
     cursor: pointer;
 }
 
-
-/* styling for the links*/
 a{
     color: white;
 }
-
 
 a:visited{
     text-decoration: none;
@@ -156,80 +153,63 @@ header{
 .resource-wrapper{
     width: 90%;
     margin: auto;
-     /* border: 2px solid green;  */
+    /* border: 2px solid green;   */
 }
 
 
 .content-wrapper{
    display: flex;
   flex-wrap: wrap;
-   gap: 2rem;
+   gap: 1.7rem;
    justify-content: center;
    align-items: center;
-   /* border: 2px solid red;  */
+    border: 2px solid red;  
 }
 
 
 /* Styling the content  */
 
-.books{
-    background: var(--image-background),url('/images/new-book-image.png');
-    min-width: var(--image-width);
-    min-height: var(--image-height);
-    background-size: cover;
-    background-repeat: no-repeat;
+.books, .channels, .beginner-guide, 
+.websites{
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
+    min-width: var(--image-width);
+    min-height:var(--image-height);
+
 }
+
+
+.books{
+     background:var(--image-background),
+     url('/images/new-book-image.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     
+} 
 
 .beginner-guide{
     background: var(--image-background), url('/images/chinese.jpg');
-    min-width: var(--image-width);
-    min-height: var(--image-height);
-    background-size:cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-  
+    background-size: contain;
+    background-position: center;
+
 }
 
 .channels{
     background: var(--image-background) , url('/images/youtube-logo.png') ;
-    background-size:cover;
-    min-width: var(--image-width);
-    min-height:var(--image-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
 }
 
 .websites{
     background: var(--image-background) , url('/images/web-icon-7.png');
-    background-size: cover;
-    min-width: var(--image-width);
-    min-height: var(--image-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-
-}
-
-.courses{
-    background: var(--image-background) , url('/images/courses.png');
-    background-size: contain;
-    min-width: var(--image-width);
-    min-height: var(--image-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    border-radius: 25px;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
+
