@@ -5,11 +5,20 @@
   body{
     margin: 0;
     font-family: "Manrope" , sans-serif;
+    min-height: 100vh;
   }
 
-button{
+  button{
     cursor: pointer;
-}
+  }
+  hr{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  p{
+    line-height: 2rem;
+  }
 
 /*-------
  Header and NAV Layout
@@ -26,14 +35,14 @@ button{
  align-items: center;
  gap: 1.5rem;
  margin-right: 10px;
- border: 2px solid green;
-  }
+ }
 
   h1{
     text-decoration: underline;
     font-weight: 200;
     font-size: 1.5rem;
   }
+
 
 /*-------
  Header style
@@ -48,9 +57,6 @@ header{
 }
 
  /* button and icon styles */
- .lantern-icon{
-    width:10%
- }
 
  .blog , .about{
     background-color: transparent;
@@ -99,34 +105,32 @@ header{
   /* Hero layout */
   
   .hero{
-    /* border: 2px solid green; */
     width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 375px;
     
   }
 
   /* Hero style */
 
   .hero{
-min-height: 375px;
 background:  linear-gradient(hsla(295, 100%, 0%, 0.75)100%, hsla(295, 100%, 100%, 0.75)) 
     , url('/images/chinese.jpg');
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 35px;
-color: white;
-font-size: 1.3rem;
+  background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ border-radius: 35px;
+ color: white;
+ font-size: 1.3rem;
   }
 
 
   /* content layout */
 
   .content-wrapper{
-    border: 2px solid red;
     width: 90%;
-   margin: auto;
+    margin: auto;
   }
